@@ -87,24 +87,19 @@
     </style>
 </head>
 <body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-primary">
-<!-- TopNavBar Implementation from JSON -->
-<nav class="fixed top-0 w-full z-50 bg-[#f9f9f9]/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_40px_40px_-15px_rgba(26,28,28,0.06)]">
-<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
-<div class="flex items-center gap-3"><a href="index.html" title="Voltar ao Portal UNESP" style="text-decoration:none"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Logo_Unesp.svg/200px-Logo_Unesp.svg.png" alt="UNESP" style="height:36px;width:auto;vertical-align:middle"/></a><span style="font-size:13px;font-weight:700;color:#001d59;letter-spacing:0.05em;text-transform:uppercase">Parcerias</span><span style="margin-left:8px"><a href="index.html" style="display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:600;color:#001d59;text-decoration:none;letter-spacing:0.05em;text-transform:uppercase;opacity:0.75;transition:opacity 0.2s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.75">&#8592; Portal</a></span></div>
-<div class="hidden md:flex items-center space-x-8 font-['Public_Sans'] font-semibold tracking-tight">
-<a class="text-[#001d59] dark:text-blue-300 border-b-2 border-[#001d59] pb-1 transition-colors duration-300" href="#institucional">Institucional</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-[#001d59] hover:text-[#003087] dark:hover:text-blue-200 transition-colors duration-300" href="#empresas">Empresas</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-[#001d59] hover:text-[#003087] dark:hover:text-blue-200 transition-colors duration-300" href="#internacional">Internacional</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-[#001d59] hover:text-[#003087] dark:hover:text-blue-200 transition-colors duration-300" href="#editais">Editais</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-[#001d59] hover:text-[#003087] dark:hover:text-blue-200 transition-colors duration-300" href="#">Projetos</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-[#001d59] hover:text-[#003087] dark:hover:text-blue-200 transition-colors duration-300" href="#">Contato</a>
-</div>
-<button class="bg-primary academic-gradient text-white px-6 py-2.5 rounded-lg font-label font-semibold scale-95 active:opacity-80 transition-all">
-                Portal do Parceiro
-            </button>
-</div>
-<div class="bg-[#f3f3f3] dark:bg-slate-800 h-[1px] w-full absolute bottom-0"></div>
+<header class="bg-[#f9f9f9]/95 dark:bg-slate-950/95 backdrop-blur-xl sticky top-0 z-50 shadow-[0_4px_24px_rgba(0,29,89,0.07)]">
+<div class="flex items-center justify-between w-full px-8 h-[64px] max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-8">
+<a href="index.html" title="Portal UNESP" style="text-decoration:none;flex-shrink:0"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Logo_Unesp.svg/200px-Logo_Unesp.svg.png" alt="UNESP" style="height:34px;width:auto"/></a>
+<nav class="hidden md:flex items-center gap-6">
+<a class="font-label text-sm font-bold uppercase tracking-wider text-[#001d59] dark:text-blue-400 border-b-2 border-[#001d59] dark:border-blue-400 pb-0.5" href="#institucional">Institucional</a><a class="font-label text-sm font-medium uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-[#001d59] dark:hover:text-blue-300 transition-colors" href="#empresas">Empresas</a><a class="font-label text-sm font-medium uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-[#001d59] dark:hover:text-blue-300 transition-colors" href="#internacional">Internacional</a><a class="font-label text-sm font-medium uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-[#001d59] dark:hover:text-blue-300 transition-colors" href="#editais">Editais</a>
 </nav>
+</div>
+<div class="flex items-center gap-2">
+<a href="index.html" class="font-label text-xs font-semibold uppercase tracking-wider text-slate-500 hover:text-[#001d59] transition-colors dark:text-slate-400 dark:hover:text-white">&#8592; Portal</a><button class="bg-primary hover:bg-primary-container text-white px-5 py-2 rounded-md font-label font-bold text-sm tracking-wide transition-all active:scale-95">Portal do Parceiro</button>
+</div>
+</div>
+</header>
 <main class="pt-20">
 <!-- Section 1: Hero Section -->
 <section id="institucional" class="relative min-h-[819px] flex items-center overflow-hidden bg-surface">
