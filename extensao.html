@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Extensão Universitária - UNESP</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#001d59",
+          "primary-container": "#003087",
+          "on-primary": "#ffffff",
+          "on-primary-container": "#7f9df8",
+          "primary-fixed": "#dbe1ff",
+          "primary-fixed-dim": "#b4c5ff",
+          "on-primary-fixed": "#00174b",
+          "on-primary-fixed-variant": "#1c4197",
+          "secondary": "#475d93",
+          "secondary-container": "#adc3ff",
+          "on-secondary": "#ffffff",
+          "on-secondary-container": "#394f84",
+          "secondary-fixed": "#dae2ff",
+          "secondary-fixed-dim": "#b1c5ff",
+          "on-secondary-fixed": "#001946",
+          "on-secondary-fixed-variant": "#2e4579",
+          "tertiary": "#002050",
+          "tertiary-container": "#00347a",
+          "on-tertiary": "#ffffff",
+          "on-tertiary-container": "#719fff",
+          "tertiary-fixed": "#d9e2ff",
+          "tertiary-fixed-dim": "#afc6ff",
+          "on-tertiary-fixed": "#001a43",
+          "on-tertiary-fixed-variant": "#004398",
+          "error": "#ba1a1a",
+          "error-container": "#ffdad6",
+          "on-error": "#ffffff",
+          "on-error-container": "#93000a",
+          "surface": "#f9f9f9",
+          "surface-dim": "#dadada",
+          "surface-bright": "#f9f9f9",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-low": "#f3f3f3",
+          "surface-container": "#eeeeee",
+          "surface-container-high": "#e8e8e8",
+          "surface-container-highest": "#e2e2e2",
+          "surface-variant": "#e2e2e2",
+          "on-surface": "#1a1c1c",
+          "on-surface-variant": "#444652",
+          "outline": "#747683",
+          "outline-variant": "#c4c6d4",
+          "inverse-surface": "#2f3131",
+          "inverse-on-surface": "#f1f1f1",
+          "inverse-primary": "#b4c5ff",
+          "surface-tint": "#3959b0",
+          "background": "#f9f9f9",
+          "on-background": "#1a1c1c"
+        },
+        fontFamily: {
+          "headline": ["Public Sans"],
+          "body": ["Noto Serif"],
+          "label": ["Inter"]
+        },
+        borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary">
+
+<!-- Header -->
+<header class="bg-[#f9f9f9]/95 dark:bg-slate-950/95 backdrop-blur-xl sticky top-0 z-50 shadow-[0_4px_24px_rgba(0,29,89,0.07)]">
+<div class="flex items-center justify-between w-full px-8 h-[64px] max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-8">
+<a href="index.html" title="Portal UNESP" style="text-decoration:none;flex-shrink:0"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Logo_Unesp.svg/200px-Logo_Unesp.svg.png" alt="UNESP" style="height:34px;width:auto"/></a>
+<nav class="hidden md:flex items-center gap-6">
+<a class="font-label text-sm font-bold uppercase tracking-wider text-[#001d59] dark:text-blue-400 border-b-2 border-[#001d59] dark:border-blue-400 pb-0.5" href="#programas">Programas</a><a class="font-label text-sm font-medium uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-[#001d59] dark:hover:text-blue-300 transition-colors" href="#acoes">Ações</a><a class="font-label text-sm font-medium uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-[#001d59] dark:hover:text-blue-300 transition-colors" href="#editais">Editais</a><a class="font-label text-sm font-medium uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-[#001d59] dark:hover:text-blue-300 transition-colors" href="#impacto">Impacto</a><a class="font-label text-sm font-medium uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-[#001d59] dark:hover:text-blue-300 transition-colors" href="#comunidade">Comunidade</a>
+</nav>
+</div>
+<div class="flex items-center gap-2">
+<a href="index.html" class="font-label text-xs font-semibold uppercase tracking-wider text-slate-500 hover:text-[#001d59] transition-colors dark:text-slate-400 dark:hover:text-white">&#8592; Portal</a><button class="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"><span class="material-symbols-outlined text-[#001d59] dark:text-slate-300" style="font-size:22px">language</span></button><button class="bg-primary hover:bg-primary-container text-white px-5 py-2 rounded-md font-label font-bold text-sm tracking-wide transition-all active:scale-95">Portal do Aluno</button>
+</div>
+</div>
+</header>
+
+<main>
+<!-- Hero Section -->
+<section class="relative h-[870px] flex items-center overflow-hidden bg-primary">
+<div class="absolute inset-0 opacity-40">
+<img alt="Comunidade UNESP em ação de extensão" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAmJ7NpreuZ1WXt4t-7PrSh0mQ6YfGoGcK4HYtIru2NmWc0oFzTilS54ipA22hx15wm3KayliUiegNDAAdNkgwphzjoRjkj5B9GnxiTLYj4Y-yAr483e89JKcSb18n9Xxc9FeiTWD1rj1OWF2UsiFldgGV5QMkxP8Di9GU4s4-vfnz2iIzdLHUKaPTpqMGDqgTYQySF5XYF1Sm0DrZReQX9MGh8Eg8x_oKV3ae_RUOiOjWA2BHSgcuFbb3nDe31PF64DRxU9Z0GvwS"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/85 to-transparent"></div>
+<div class="relative z-10 max-w-screen-2xl mx-auto px-8 w-full">
+<div class="max-w-3xl">
+<span class="inline-block py-1 px-3 bg-primary-fixed text-on-primary-fixed-variant text-xs font-bold tracking-widest uppercase mb-6 rounded">Universidade e Sociedade</span>
+<h1 class="text-white font-headline text-6xl md:text-8xl font-extrabold tracking-tight leading-tight mb-6">
+  Extensão <br/><span class="font-body italic font-normal text-primary-fixed-dim">Universitária</span>
+</h1>
+<p class="text-primary-fixed-dim font-body text-xl md:text-2xl leading-relaxed mb-10 opacity-90 italic">
+  Conectando a universidade à sociedade — transformando conhecimento acadêmico em soluções concretas para as comunidades do estado de São Paulo.
+</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-white text-primary px-8 py-4 rounded-md font-label font-bold text-base hover:bg-surface-container-low transition-all shadow-xl active:scale-95">
+  Conheça os Programas
+</button>
+<button class="border-2 border-white/40 text-white px-8 py-4 rounded-md font-label font-bold text-base hover:bg-white/10 transition-all backdrop-blur-sm active:scale-95">
+  Submeter Projeto
+</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Metrics Section -->
+<section id="programas" class="bg-surface py-24">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+<div class="bg-surface-container-low p-12 rounded-xl flex flex-col justify-between group hover:translate-y-[-4px] transition-transform duration-300">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6">diversity_3</span>
+<h3 class="font-headline font-bold text-5xl text-primary mb-2">1.200+</h3>
+<p class="font-label uppercase tracking-widest text-on-surface-variant text-xs">Projetos Ativos</p>
+</div>
+<p class="mt-8 text-on-surface-variant leading-relaxed">Ações de extensão em andamento em todos os 24 campi, beneficiando comunidades em todo o estado.</p>
+</div>
+<div class="bg-primary-container p-12 rounded-xl flex flex-col justify-between text-white shadow-xl">
+<div>
+<span class="material-symbols-outlined text-on-primary-container text-4xl mb-6">people</span>
+<h3 class="font-headline font-bold text-5xl mb-2">500k+</h3>
+<p class="font-label uppercase tracking-widest text-on-primary-container text-xs">Pessoas Atendidas/Ano</p>
+</div>
+<p class="mt-8 opacity-80 leading-relaxed">Impacto direto em meio milhão de pessoas por meio de cursos, eventos, atendimentos e ações comunitárias.</p>
+</div>
+<div class="bg-surface-container-low p-12 rounded-xl flex flex-col justify-between group hover:translate-y-[-4px] transition-transform duration-300">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6">location_city</span>
+<h3 class="font-headline font-bold text-5xl text-primary mb-2">300+</h3>
+<p class="font-label uppercase tracking-widest text-on-surface-variant text-xs">Municípios Alcançados</p>
+</div>
+<p class="mt-8 text-on-surface-variant leading-relaxed">Presença em mais de 300 municípios paulistas, levando conhecimento e serviços à população.</p>
+</div>
+</div>
+
+<!-- Programs Grid -->
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl border-l-4 border-primary pl-8">
+<h2 class="font-headline text-4xl font-bold text-primary mb-4">Áreas de Atuação</h2>
+<p class="font-body text-lg text-on-surface-variant">A extensão universitária da UNESP atua em grandes eixos temáticos que dialogam com as demandas da sociedade contemporânea.</p>
+</div>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-outline-variant/20 rounded-xl overflow-hidden shadow-sm">
+<div class="bg-surface-container-lowest p-10 hover:bg-primary group transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 group-hover:text-white transition-colors">health_and_safety</span>
+<h4 class="font-headline font-bold text-xl mb-4 group-hover:text-white transition-colors">Saúde Coletiva</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed group-hover:text-white/80 transition-colors">Atendimento clínico gratuito, campanhas de prevenção e promoção da saúde pública.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 hover:bg-primary group transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 group-hover:text-white transition-colors">menu_book</span>
+<h4 class="font-headline font-bold text-xl mb-4 group-hover:text-white transition-colors">Educação</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed group-hover:text-white/80 transition-colors">Alfabetização, reforço escolar, cursos preparatórios e formação de professores.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 hover:bg-primary group transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 group-hover:text-white transition-colors">nature</span>
+<h4 class="font-headline font-bold text-xl mb-4 group-hover:text-white transition-colors">Meio Ambiente</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed group-hover:text-white/80 transition-colors">Educação ambiental, recuperação de áreas degradadas e saneamento comunitário.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 hover:bg-primary group transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 group-hover:text-white transition-colors">gavel</span>
+<h4 class="font-headline font-bold text-xl mb-4 group-hover:text-white transition-colors">Direitos e Cidadania</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed group-hover:text-white/80 transition-colors">Assistência jurídica gratuita, orientação trabalhista e defesa de direitos humanos.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Featured Actions -->
+<section id="acoes" class="bg-surface-container-low py-24">
+<div class="max-w-screen-2xl mx-auto px-8">
+<h2 class="font-headline text-4xl font-bold text-primary mb-4">Ações em Destaque</h2>
+<div class="w-20 h-1.5 bg-primary mb-16"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Ação 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+<div class="h-48 bg-primary-container relative overflow-hidden flex items-center justify-center">
+<span class="material-symbols-outlined text-white/30 text-[120px]">favorite</span>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<span class="absolute bottom-4 left-4 text-xs font-label font-bold uppercase tracking-widest text-white/80">Saúde</span>
+</div>
+<div class="p-8">
+<h5 class="font-headline font-bold text-xl text-on-surface mb-3">Programa UNESP Saúde nas Comunidades</h5>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Atendimentos multiprofissionais gratuitos em saúde bucal, oftalmologia e medicina preventiva em municípios de baixa cobertura assistencial.</p>
+<div class="flex items-center justify-between">
+<span class="text-xs font-label text-on-surface-variant">24 campi participantes</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Ação 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+<div class="h-48 bg-secondary relative overflow-hidden flex items-center justify-center">
+<span class="material-symbols-outlined text-white/30 text-[120px]">school</span>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<span class="absolute bottom-4 left-4 text-xs font-label font-bold uppercase tracking-widest text-white/80">Educação</span>
+</div>
+<div class="p-8">
+<h5 class="font-headline font-bold text-xl text-on-surface mb-3">UNESP de Portas Abertas</h5>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Programa anual que abre os laboratórios, bibliotecas e instalações universitárias para estudantes da rede pública de ensino médio do estado.</p>
+<div class="flex items-center justify-between">
+<span class="text-xs font-label text-on-surface-variant">+15 mil estudantes/ano</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Ação 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+<div class="h-48 bg-tertiary-container relative overflow-hidden flex items-center justify-center">
+<span class="material-symbols-outlined text-white/30 text-[120px]">eco</span>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<span class="absolute bottom-4 left-4 text-xs font-label font-bold uppercase tracking-widest text-white/80">Ambiente</span>
+</div>
+<div class="p-8">
+<h5 class="font-headline font-bold text-xl text-on-surface mb-3">Hortas Comunitárias e Agroecologia</h5>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Implantação de hortas agroecológicas em escolas públicas e comunidades periféricas, aliando segurança alimentar à educação ambiental.</p>
+<div class="flex items-center justify-between">
+<span class="text-xs font-label text-on-surface-variant">80 municípios atendidos</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Editais Section -->
+<section id="editais" class="py-24 bg-surface">
+<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-4">
+<h2 class="font-headline text-4xl font-bold text-primary mb-6">Editais e Chamadas</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Submeta sua proposta de projeto de extensão ou candidature-se a bolsas e financiamentos disponíveis.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:underline" href="#">
+  Ver todos os editais <span class="material-symbols-outlined">open_in_new</span>
+</a>
+</div>
+<div class="lg:col-span-8 space-y-6">
+<div class="bg-surface-container-lowest border-l-4 border-primary p-6 flex justify-between items-center group cursor-pointer hover:shadow-md transition-shadow">
+<div>
+<span class="text-xs font-label uppercase text-primary font-bold tracking-widest mb-1 block">Bolsa de Extensão</span>
+<h5 class="text-xl font-headline font-bold text-on-surface">Chamada 08/2024 — Projetos Socioambientais</h5>
+<p class="text-on-surface-variant text-sm">Prazo: Até 30 de Novembro, 2024</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all">chevron_right</span>
+</div>
+<div class="bg-surface-container-lowest border-l-4 border-secondary p-6 flex justify-between items-center group cursor-pointer hover:shadow-md transition-shadow">
+<div>
+<span class="text-xs font-label uppercase text-secondary font-bold tracking-widest mb-1 block">Programa Institucional</span>
+<h5 class="text-xl font-headline font-bold text-on-surface">PROEX 2024 — Ações de Saúde Coletiva</h5>
+<p class="text-on-surface-variant text-sm">Prazo: Fluxo Contínuo</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all">chevron_right</span>
+</div>
+<div class="bg-surface-container-lowest border-l-4 border-primary-container p-6 flex justify-between items-center group cursor-pointer hover:shadow-md transition-shadow">
+<div>
+<span class="text-xs font-label uppercase text-primary-container font-bold tracking-widest mb-1 block">Financiamento Externo</span>
+<h5 class="text-xl font-headline font-bold text-on-surface">Convênio MEC — Educação Inclusiva em Territórios Vulneráveis</h5>
+<p class="text-on-surface-variant text-sm">Prazo: Até 15 de Janeiro, 2025</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Impact Section -->
+<section id="impacto" class="py-24 bg-primary overflow-hidden relative">
+<div class="absolute right-0 top-0 h-full w-1/3 opacity-20 hidden lg:block">
+<img alt="Extensão UNESP em ação" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvCtKZhLO2CKHtFzJzI9MOHbp60yTcSAhpg5Y3RQ-3dlZ7gS17-f-6ve-YssxC_sWtcJ7LyXiHUCgTSkx8jrPPS8BYPGnHeYJKpleO8EaJO_nfatrGtgla8hllYTzJ9LqTistm7k3DrfLnSpq09IVPPfDTu4SA8SgaXdnniYyxWfFanFD-Mq3mENAR36Epo3dyV9e0rC0frdeiQ0W6kOS4dtm6tBrCceHuGCuTuIkIU01lmOdjyFwjMBpINDXseI0Hx1QkBz2C0SjR"/>
+</div>
+<div class="max-w-screen-2xl mx-auto px-8 relative z-10">
+<div class="max-w-2xl">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-white mb-8">Impacto e Reconhecimento</h2>
+<p class="text-primary-fixed-dim text-lg mb-10 leading-relaxed italic">
+  "A extensão universitária é o instrumento pelo qual a Universidade leva à sociedade os resultados de seu trabalho de ensino e pesquisa, enriquecendo-se mutuamente."
+</p>
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="bg-white/10 backdrop-blur-md p-8 rounded-lg border border-white/20 flex-1">
+<h6 class="text-white font-bold mb-2">Relatório de Impacto 2024</h6>
+<p class="text-white/70 text-sm mb-4">Acesse os dados completos sobre os resultados das ações de extensão da UNESP.</p>
+<a class="text-white font-bold inline-flex items-center gap-1 group" href="#">Baixar relatório <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">download</span></a>
+</div>
+<div class="bg-white/10 backdrop-blur-md p-8 rounded-lg border border-white/20 flex-1">
+<h6 class="text-white font-bold mb-2">FORPROEX</h6>
+<p class="text-white/70 text-sm mb-4">UNESP como membro ativo do Fórum de Pró-Reitores de Extensão das Universidades Públicas.</p>
+<a class="text-white font-bold inline-flex items-center gap-1 group" href="#">Saiba mais <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Community Section -->
+<section id="comunidade" class="py-24 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex items-center justify-between mb-16">
+<h2 class="font-headline text-4xl font-bold text-primary">Cursos de Extensão</h2>
+<a href="#" class="text-primary font-bold hover:underline inline-flex items-center gap-1">Ver todos <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest rounded-xl p-8 flex flex-col h-full shadow-sm hover:shadow-lg transition-all border border-transparent hover:border-outline-variant/30">
+<div class="flex-grow">
+<span class="inline-block px-3 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold mb-4 uppercase">Online · Gratuito</span>
+<h6 class="text-xl font-headline font-bold text-on-surface mb-4">Introdução à Agroecologia e Soberania Alimentar</h6>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Fundamentos da produção sustentável de alimentos e suas relações com saúde, ambiente e política alimentar.</p>
+</div>
+<div class="pt-6 border-t border-surface-container-high flex items-center justify-between">
+<div class="text-xs text-on-surface-variant">40h · 2 meses</div>
+<button class="text-primary font-bold text-sm font-label hover:underline">Inscrever-se</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-8 flex flex-col h-full shadow-sm hover:shadow-lg transition-all border border-transparent hover:border-outline-variant/30">
+<div class="flex-grow">
+<span class="inline-block px-3 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold mb-4 uppercase">Presencial · Gratuito</span>
+<h6 class="text-xl font-headline font-bold text-on-surface mb-4">Direitos do Consumidor e Educação Financeira</h6>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Capacitação prática sobre relações de consumo, crédito responsável e planejamento financeiro para o cotidiano.</p>
+</div>
+<div class="pt-6 border-t border-surface-container-high flex items-center justify-between">
+<div class="text-xs text-on-surface-variant">20h · 1 mês</div>
+<button class="text-primary font-bold text-sm font-label hover:underline">Inscrever-se</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-8 flex flex-col h-full shadow-sm hover:shadow-lg transition-all border border-transparent hover:border-outline-variant/30">
+<div class="flex-grow">
+<span class="inline-block px-3 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold mb-4 uppercase">Híbrido · Gratuito</span>
+<h6 class="text-xl font-headline font-bold text-on-surface mb-4">Primeiros Socorros e Suporte Básico de Vida</h6>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Treinamento em técnicas essenciais de suporte básico à vida, voltado à comunidade em geral e profissionais de saúde.</p>
+</div>
+<div class="pt-6 border-t border-surface-container-high flex items-center justify-between">
+<div class="text-xs text-on-surface-variant">16h · 2 semanas</div>
+<button class="text-primary font-bold text-sm font-label hover:underline">Inscrever-se</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#1a1c1c] dark:bg-black w-full py-12 px-8 mt-auto border-t border-white/10">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-screen-2xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-white font-serif text-xl mb-4">UNESP</div>
+<div class="font-body italic text-sm text-[#f3f3f3] dark:text-slate-400">
+  © 2024 Universidade Estadual Paulista - Pró-Reitoria de Extensão Universitária
+</div>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-slate-400 hover:text-white font-body italic text-sm transition-opacity opacity-80 hover:opacity-100" href="#">Privacidade</a>
+<a class="text-slate-400 hover:text-white font-body italic text-sm transition-opacity opacity-80 hover:opacity-100" href="index.html">Portal UNESP</a>
+<a class="text-slate-400 hover:text-white font-body italic text-sm transition-opacity opacity-80 hover:opacity-100" href="#">Acessibilidade</a>
+<a class="text-slate-400 hover:text-white font-body italic text-sm transition-opacity opacity-80 hover:opacity-100" href="#">Contato</a>
+</div>
+<div class="mt-8 md:mt-0 flex gap-4">
+<span class="material-symbols-outlined text-white/60 hover:text-white cursor-pointer transition-all">share</span>
+<span class="material-symbols-outlined text-white/60 hover:text-white cursor-pointer transition-all">rss_feed</span>
+</div>
+</div>
+</footer>
+
+</body></html>

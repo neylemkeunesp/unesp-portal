@@ -45,3 +45,5 @@ https://SEU_USUARIO.github.io/unesp-portal/
 | `parcerias.html` | Parcerias institucionais |
 | `trabalhar.html` | Trabalhar na UNESP |
 | `transparencia.html` | Informação e transparência |
+| `extensao.html` | Extensão universitária |
+| `institucional.html` | Sobre a UNESP — história, reitoria e campi |
