@@ -83,26 +83,19 @@
     </style>
 </head>
 <body class="bg-background text-on-surface">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#f9f9f9]/80 backdrop-blur-xl shadow-[0_40px_40px_-15px_rgba(26,28,28,0.06)]">
-<div class="flex justify-between items-center h-20 px-12 w-full max-w-screen-2xl mx-auto">
-<a href="index.html" title="Voltar ao Portal UNESP" style="text-decoration:none"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Logo_Unesp.svg/200px-Logo_Unesp.svg.png" alt="UNESP" style="height:36px;width:auto;vertical-align:middle"/></a>
-<div class="hidden md:flex items-center gap-8">
-<a class="font-headline uppercase tracking-wider text-sm font-semibold text-[#1a1c1c]/60 hover:text-[#001d59] transition-all duration-300" href="estudar.html">Estudar</a>
-<a class="font-headline uppercase tracking-wider text-sm font-semibold text-[#001d59] border-b-2 border-[#003087] pb-1" href="trabalhar.html">Trabalhar</a>
-<a class="font-headline uppercase tracking-wider text-sm font-semibold text-[#1a1c1c]/60 hover:text-[#001d59] transition-all duration-300" href="pesquisa.html">Pesquisa</a>
-<a class="font-headline uppercase tracking-wider text-sm font-semibold text-[#1a1c1c]/60 hover:text-[#001d59] transition-all duration-300" href="inovacao.html">Inovação</a>
-<a class="font-headline uppercase tracking-wider text-sm font-semibold text-[#1a1c1c]/60 hover:text-[#001d59] transition-all duration-300" href="transparencia.html">Informação</a>
-<a class="font-headline uppercase tracking-wider text-sm font-semibold text-[#1a1c1c]/60 hover:text-[#001d59] transition-all duration-300" href="parcerias.html">Parcerias</a>
-</div>
-<div class="flex items-center gap-6">
-<span class="material-symbols-outlined text-on-surface-variant cursor-pointer">search</span>
-<button class="bg-primary-container text-white px-6 py-2.5 rounded-lg font-headline text-sm font-bold uppercase tracking-wide hover:brightness-110 transition-all">
-                    Acesso Restrito
-                </button>
-</div>
-</div>
+<header class="bg-[#f9f9f9]/95 dark:bg-slate-950/95 backdrop-blur-xl sticky top-0 z-50 shadow-[0_4px_24px_rgba(0,29,89,0.07)]">
+<div class="flex items-center justify-between w-full px-8 h-[64px] max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-8">
+<a href="index.html" title="Portal UNESP" style="text-decoration:none;flex-shrink:0"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Logo_Unesp.svg/200px-Logo_Unesp.svg.png" alt="UNESP" style="height:34px;width:auto"/></a>
+<nav class="hidden md:flex items-center gap-6">
+<a class="font-label text-sm font-medium uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-[#001d59] dark:hover:text-blue-300 transition-colors" href="estudar.html">Estudar</a><a class="font-label text-sm font-bold uppercase tracking-wider text-[#001d59] dark:text-blue-400 border-b-2 border-[#001d59] dark:border-blue-400 pb-0.5" href="trabalhar.html">Trabalhar</a><a class="font-label text-sm font-medium uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-[#001d59] dark:hover:text-blue-300 transition-colors" href="pesquisa.html">Pesquisa</a><a class="font-label text-sm font-medium uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-[#001d59] dark:hover:text-blue-300 transition-colors" href="inovacao.html">Inovação</a><a class="font-label text-sm font-medium uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-[#001d59] dark:hover:text-blue-300 transition-colors" href="transparencia.html">Informação</a><a class="font-label text-sm font-medium uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-[#001d59] dark:hover:text-blue-300 transition-colors" href="parcerias.html">Parcerias</a>
 </nav>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"><span class="material-symbols-outlined text-[#001d59] dark:text-slate-300" style="font-size:22px">search</span></button><button class="bg-primary hover:bg-primary-container text-white px-5 py-2 rounded-md font-label font-bold text-sm tracking-wide transition-all active:scale-95">Acesso Restrito</button>
+</div>
+</div>
+</header>
 <main class="pt-20">
 <!-- Hero Section -->
 <section class="relative h-[870px] flex items-center overflow-hidden">
