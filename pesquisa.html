@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UNESP Pesquisa - Ciência e Inovação</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700;800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ba1a1a",
+              "on-primary": "#ffffff",
+              "surface-container-high": "#e8e8e8",
+              "tertiary-fixed": "#d9e2ff",
+              "surface-container-low": "#f3f3f3",
+              "primary-fixed-dim": "#b4c5ff",
+              "on-primary-fixed-variant": "#1c4197",
+              "on-surface": "#1a1c1c",
+              "surface-container-highest": "#e2e2e2",
+              "tertiary-container": "#00347a",
+              "on-secondary": "#ffffff",
+              "on-primary-container": "#7f9df8",
+              "surface-bright": "#f9f9f9",
+              "surface-tint": "#3959b0",
+              "on-primary-fixed": "#00174b",
+              "inverse-surface": "#2f3131",
+              "secondary-fixed-dim": "#b1c5ff",
+              "tertiary": "#002050",
+              "on-secondary-fixed-variant": "#2e4579",
+              "on-background": "#1a1c1c",
+              "surface-variant": "#e2e2e2",
+              "primary": "#001d59",
+              "on-surface-variant": "#444652",
+              "on-secondary-fixed": "#001946",
+              "on-secondary-container": "#394f84",
+              "tertiary-fixed-dim": "#afc6ff",
+              "outline-variant": "#c4c6d4",
+              "on-tertiary-fixed-variant": "#004398",
+              "secondary-fixed": "#dae2ff",
+              "secondary-container": "#adc3ff",
+              "secondary": "#475d93",
+              "on-tertiary": "#ffffff",
+              "on-error": "#ffffff",
+              "outline": "#747683",
+              "on-tertiary-container": "#719fff",
+              "primary-container": "#003087",
+              "on-error-container": "#93000a",
+              "inverse-primary": "#b4c5ff",
+              "surface-dim": "#dadada",
+              "error-container": "#ffdad6",
+              "surface-container-lowest": "#ffffff",
+              "surface": "#f9f9f9",
+              "primary-fixed": "#dbe1ff",
+              "on-tertiary-fixed": "#001a43",
+              "inverse-on-surface": "#f1f1f1",
+              "background": "#f9f9f9",
+              "surface-container": "#eeeeee"
+            },
+            fontFamily: {
+              "headline": ["Public Sans"],
+              "body": ["Noto Serif"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(20px);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="bg-[#f9f9f9] dark:bg-slate-950 shadow-[0_40px_40px_rgba(26,28,28,0.06)] sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold text-[#001d59] dark:text-white tracking-tighter font-headline">
+                UNESP Pesquisa
+            </div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-[#001d59] dark:text-blue-400 border-b-2 border-[#001d59] dark:border-blue-400 pb-1 font-semibold font-headline transition-colors duration-300" href="#">Grupos</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium font-headline hover:text-[#003087] dark:hover:text-blue-300 transition-colors duration-300" href="#">Laboratórios</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium font-headline hover:text-[#003087] dark:hover:text-blue-300 transition-colors duration-300" href="#">Editais</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium font-headline hover:text-[#003087] dark:hover:text-blue-300 transition-colors duration-300" href="#">Publicações</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium font-headline hover:text-[#003087] dark:hover:text-blue-300 transition-colors duration-300" href="#">Repositório</a>
+</nav>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-[#001d59] cursor-pointer hover:scale-95 duration-200">language</span>
+<span class="material-symbols-outlined text-[#001d59] cursor-pointer hover:scale-95 duration-200">account_circle</span>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[870px] flex items-center overflow-hidden bg-primary">
+<div class="absolute inset-0 opacity-40">
+<img alt="Laboratório Moderno da UNESP" class="w-full h-full object-cover" data-alt="Modern high-tech research laboratory with equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB83FbsA4IFM9MJyd7V5UBhbAT_mpbYUeB85jYvLNJblMbQrV5bdplhRwEAR25ZqofM2OzBRADimtyZZHhr8fAKvgaXeOHbzzqGX7D53yvgGDCd7hXKt0HQDRmYRPxZ5H89SCN_gs_0EYZieRjApotepkwwlwvodoGLP3JoyNyrg-RiiXb_au0ocZN5OG-GYeAdQprak6JTBwVKhmvhbyOzASrKQOp8nJfBsstrEKQuuVz0mCgl3ooOGFG20kie9SOmxQvLioplOQ_t"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
+<div class="relative z-10 max-w-screen-2xl mx-auto px-8 w-full">
+<div class="max-w-3xl">
+<h1 class="text-white font-headline text-6xl md:text-8xl font-extrabold tracking-tight leading-tight mb-6">
+                        Ciência e Inovação na UNESP
+                    </h1>
+<p class="text-primary-fixed-dim font-body text-xl md:text-2xl leading-relaxed mb-10 opacity-90 italic">
+                        Transformando conhecimento em impacto global através da excelência em pesquisa acadêmica e tecnológica.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-white px-8 py-4 rounded-md font-label font-semibold hover:brightness-110 transition-all flex items-center gap-2">
+                            Explorar Projetos <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-md font-label font-semibold hover:bg-white/20 transition-all">
+                            Conheça Nossos Grupos
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Metrics/Highlights Section (The Bento Style) -->
+<section class="bg-surface py-24">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-low p-12 rounded-xl flex flex-col justify-between group hover:translate-y-[-4px] transition-transform duration-300">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6">groups</span>
+<h3 class="font-headline font-bold text-5xl text-primary mb-2">3.800+</h3>
+<p class="font-label uppercase tracking-widest text-on-surface-variant text-xs">Pesquisadores Ativos</p>
+</div>
+<p class="mt-8 text-on-surface-variant leading-relaxed">Corpo docente altamente qualificado distribuído em todos os campi do estado de São Paulo.</p>
+</div>
+<div class="bg-primary-container p-12 rounded-xl flex flex-col justify-between text-white shadow-xl">
+<div>
+<span class="material-symbols-outlined text-on-primary-container text-4xl mb-6">article</span>
+<h3 class="font-headline font-bold text-5xl mb-2">12.500</h3>
+<p class="font-label uppercase tracking-widest text-on-primary-container text-xs">Publicações Anuais</p>
+</div>
+<p class="mt-8 opacity-80 leading-relaxed">Produção científica de alto impacto indexada nas principais bases de dados internacionais.</p>
+</div>
+<div class="bg-surface-container-low p-12 rounded-xl flex flex-col justify-between group hover:translate-y-[-4px] transition-transform duration-300">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6">public</span>
+<h3 class="font-headline font-bold text-5xl text-primary mb-2">Top 3</h3>
+<p class="font-label uppercase tracking-widest text-on-surface-variant text-xs">Impacto Internacional</p>
+</div>
+<p class="mt-8 text-on-surface-variant leading-relaxed">Líder em inovação e colaborações internacionais entre as universidades da América Latina.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Research Areas Section (Grid Layout) -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl border-l-4 border-primary pl-8">
+<h2 class="font-headline text-4xl font-bold text-primary mb-4">Áreas de Excelência</h2>
+<p class="font-body text-lg text-on-surface-variant">Nossa pesquisa abrange todas as dimensões do conhecimento humano, buscando soluções sustentáveis e inovadoras.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-outline-variant/20 rounded-xl overflow-hidden shadow-sm">
+<!-- Area 1 -->
+<div class="bg-surface-container-lowest p-10 hover:bg-primary group transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 group-hover:text-white transition-colors">biotech</span>
+<h4 class="font-headline font-bold text-xl mb-4 group-hover:text-white transition-colors">Ciências da Vida</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed group-hover:text-white/80 transition-colors">Genética, biodiversidade e saúde pública no coração da pesquisa biológica.</p>
+</div>
+<!-- Area 2 -->
+<div class="bg-surface-container-lowest p-10 hover:bg-primary group transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 group-hover:text-white transition-colors">precision_manufacturing</span>
+<h4 class="font-headline font-bold text-xl mb-4 group-hover:text-white transition-colors">Tecnologia</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed group-hover:text-white/80 transition-colors">Inovação em engenharia, IA e nanotecnologia para o desenvolvimento industrial.</p>
+</div>
+<!-- Area 3 -->
+<div class="bg-surface-container-lowest p-10 hover:bg-primary group transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 group-hover:text-white transition-colors">auto_stories</span>
+<h4 class="font-headline font-bold text-xl mb-4 group-hover:text-white transition-colors">Humanidades</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed group-hover:text-white/80 transition-colors">Reflexões críticas sobre sociedade, cultura e política em um mundo globalizado.</p>
+</div>
+<!-- Area 4 -->
+<div class="bg-surface-container-lowest p-10 hover:bg-primary group transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 group-hover:text-white transition-colors">eco</span>
+<h4 class="font-headline font-bold text-xl mb-4 group-hover:text-white transition-colors">Sustentabilidade</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed group-hover:text-white/80 transition-colors">Pesquisas focadas em energias renováveis e conservação ambiental.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Editais e Oportunidades (List with Cards) -->
+<section class="py-24 bg-surface">
+<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-4">
+<h2 class="font-headline text-4xl font-bold text-primary mb-6">Oportunidades Abertas</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Venha fazer parte do nosso ecossistema de inovação. Confira as chamadas vigentes para bolsas e parcerias.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:underline" href="#">
+                        Ver todos os editais <span class="material-symbols-outlined">open_in_new</span>
+</a>
+</div>
+<div class="lg:col-span-8 space-y-6">
+<!-- Edital 1 -->
+<div class="bg-surface-container-lowest border-l-4 border-primary p-6 flex justify-between items-center group cursor-pointer hover:shadow-md transition-shadow">
+<div>
+<span class="text-xs font-label uppercase text-primary font-bold tracking-widest mb-1 block">Pós-Doutorado</span>
+<h5 class="text-xl font-headline font-bold text-on-surface">Chamada 015/2024 - Biotecnologia Sustentável</h5>
+<p class="text-on-surface-variant text-sm">Prazo: Até 25 de Outubro, 2024</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all">chevron_right</span>
+</div>
+<!-- Edital 2 -->
+<div class="bg-surface-container-lowest border-l-4 border-secondary p-6 flex justify-between items-center group cursor-pointer hover:shadow-md transition-shadow">
+<div>
+<span class="text-xs font-label uppercase text-secondary font-bold tracking-widest mb-1 block">Bolsas de Pesquisa</span>
+<h5 class="text-xl font-headline font-bold text-on-surface">Auxílio à Organização de Reunião Científica</h5>
+<p class="text-on-surface-variant text-sm">Prazo: Fluxo Contínuo</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all">chevron_right</span>
+</div>
+<!-- Edital 3 -->
+<div class="bg-surface-container-lowest border-l-4 border-primary-container p-6 flex justify-between items-center group cursor-pointer hover:shadow-md transition-shadow">
+<div>
+<span class="text-xs font-label uppercase text-primary-container font-bold tracking-widest mb-1 block">Internacionalização</span>
+<h5 class="text-xl font-headline font-bold text-on-surface">Programa de Mobilidade Docente - Europa</h5>
+<p class="text-on-surface-variant text-sm">Prazo: Até 12 de Dezembro, 2024</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Directory CTA (Asymmetric Layout) -->
+<section class="py-24 bg-primary overflow-hidden relative">
+<div class="absolute right-0 top-0 h-full w-1/3 opacity-20 hidden lg:block">
+<img alt="Equipe de pesquisa" class="h-full w-full object-cover" data-alt="Group of researchers collaborating in a workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvCtKZhLO2CKHtFzJzI9MOHbp60yTcSAhpg5Y3RQ-3dlZ7gS17-f-6ve-YssxC_sWtcJ7LyXiHUCgTSkx8jrPPS8BYPGnHeYJKpleO8EaJO_nfatrGtgla8hllYTzJ9LqTistm7k3DrfLnSpq09IVPPfDTu4SA8SgaXdnniYyxWfFanFD-Mq3mENAR36Epo3dyV9e0rC0frdeiQ0W6kOS4dtm6tBrCceHuGCuTuIkIU01lmOdjyFwjMBpINDXseI0Hx1QkBz2C0SjR"/>
+</div>
+<div class="max-w-screen-2xl mx-auto px-8 relative z-10">
+<div class="max-w-2xl">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-white mb-8">Grupos e Laboratórios</h2>
+<p class="text-primary-fixed-dim text-lg mb-10 leading-relaxed italic">
+                        "A integração de diferentes áreas do conhecimento é o motor que impulsiona nossas descobertas."
+                    </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="bg-white/10 backdrop-blur-md p-8 rounded-lg border border-white/20 flex-1">
+<h6 class="text-white font-bold mb-2">Diretório de Grupos</h6>
+<p class="text-white/70 text-sm mb-4">Busque por áreas de conhecimento, pesquisadores ou palavras-chave.</p>
+<a class="text-white font-bold inline-flex items-center gap-1 group" href="#">Acessar base <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+</div>
+<div class="bg-white/10 backdrop-blur-md p-8 rounded-lg border border-white/20 flex-1">
+<h6 class="text-white font-bold mb-2">Mapa de Laboratórios</h6>
+<p class="text-white/70 text-sm mb-4">Localize infraestruturas de ponta disponíveis em nossas 24 cidades.</p>
+<a class="text-white font-bold inline-flex items-center gap-1 group" href="#">Ver mapa <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">map</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Publications (Carousel/Grid) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex items-center justify-between mb-16">
+<h2 class="font-headline text-4xl font-bold text-primary">Publicações em Destaque</h2>
+<div class="flex gap-2">
+<button class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Publication 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-8 flex flex-col h-full shadow-sm hover:shadow-lg transition-all border border-transparent hover:border-outline-variant/30">
+<div class="flex-grow">
+<span class="inline-block px-3 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold mb-4 uppercase">Revista Nature</span>
+<h6 class="text-xl font-headline font-bold text-on-surface mb-4">Impacto das Mudanças Climáticas na Biodiversidade do Cerrado</h6>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-3">Um estudo abrangente liderado por pesquisadores da UNESP revela dados alarmantes sobre a resiliência das espécies endêmicas...</p>
+</div>
+<div class="pt-6 border-t border-surface-container-high flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-white font-bold text-xs">RS</div>
+<div class="text-xs">
+<p class="font-bold text-on-surface">Dr. Ricardo Silva</p>
+<p class="text-on-surface-variant">Instituto de Biociências</p>
+</div>
+</div>
+</div>
+<!-- Publication 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-8 flex flex-col h-full shadow-sm hover:shadow-lg transition-all border border-transparent hover:border-outline-variant/30">
+<div class="flex-grow">
+<span class="inline-block px-3 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold mb-4 uppercase">IEEE Xplore</span>
+<h6 class="text-xl font-headline font-bold text-on-surface mb-4">Algoritmos de IA para Otimização de Redes Inteligentes de Energia</h6>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-3">Nova abordagem computacional permite reduzir perdas na distribuição de energia em até 15% usando machine learning...</p>
+</div>
+<div class="pt-6 border-t border-surface-container-high flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-white font-bold text-xs">MA</div>
+<div class="text-xs">
+<p class="font-bold text-on-surface">Dra. Maria Almeida</p>
+<p class="text-on-surface-variant">Faculdade de Engenharia</p>
+</div>
+</div>
+</div>
+<!-- Publication 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-8 flex flex-col h-full shadow-sm hover:shadow-lg transition-all border border-transparent hover:border-outline-variant/30">
+<div class="flex-grow">
+<span class="inline-block px-3 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold mb-4 uppercase">The Lancet</span>
+<h6 class="text-xl font-headline font-bold text-on-surface mb-4">Novas Terapias Genéticas para Doenças Tropicais Negligenciadas</h6>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-3">Resultados promissores em ensaios clínicos de fase II mostram eficácia superior no tratamento de leishmaniose...</p>
+</div>
+<div class="pt-6 border-t border-surface-container-high flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xs">CP</div>
+<div class="text-xs">
+<p class="font-bold text-on-surface">Prof. Carlos Prado</p>
+<p class="text-on-surface-variant">Faculdade de Medicina</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="text-primary font-bold hover:underline decoration-2 underline-offset-4">
+                        Acessar Repositório Institucional Completo
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1a1c1c] dark:bg-black w-full py-12 px-8 mt-auto border-t border-white/10">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-screen-2xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-white font-serif text-xl mb-4">UNESP</div>
+<div class="font-['Noto_Serif'] italic text-sm text-[#f3f3f3] dark:text-slate-400">
+                    © 2024 Universidade Estadual Paulista - Vice-Reitoria de Pesquisa
+                </div>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-slate-400 hover:text-white font-['Noto_Serif'] italic text-sm transition-opacity opacity-80 hover:opacity-100" href="#">Privacidade</a>
+<a class="text-slate-400 hover:text-white font-['Noto_Serif'] italic text-sm transition-opacity opacity-80 hover:opacity-100" href="#">Portal Unesp</a>
+<a class="text-slate-400 hover:text-white font-['Noto_Serif'] italic text-sm transition-opacity opacity-80 hover:opacity-100" href="#">Acessibilidade</a>
+<a class="text-slate-400 hover:text-white font-['Noto_Serif'] italic text-sm transition-opacity opacity-80 hover:opacity-100" href="#">Contato</a>
+</div>
+<div class="mt-8 md:mt-0 flex gap-4">
+<span class="material-symbols-outlined text-white/60 hover:text-white cursor-pointer transition-all">share</span>
+<span class="material-symbols-outlined text-white/60 hover:text-white cursor-pointer transition-all">rss_feed</span>
+</div>
+</div>
+</footer>
+</body></html>

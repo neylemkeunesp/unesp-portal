@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AUIN - Agência Unesp de Inovação</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700;800;900&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed": "#dae2ff",
+              "tertiary-fixed": "#d9e2ff",
+              "primary-container": "#003087",
+              "background": "#f9f9f9",
+              "on-background": "#1a1c1c",
+              "inverse-on-surface": "#f1f1f1",
+              "surface-container-high": "#e8e8e8",
+              "surface-bright": "#f9f9f9",
+              "on-secondary": "#ffffff",
+              "surface": "#f9f9f9",
+              "on-primary": "#ffffff",
+              "outline": "#747683",
+              "on-error": "#ffffff",
+              "on-primary-container": "#7f9df8",
+              "on-surface-variant": "#444652",
+              "primary-fixed-dim": "#b4c5ff",
+              "on-surface": "#1a1c1c",
+              "on-error-container": "#93000a",
+              "surface-container-lowest": "#ffffff",
+              "secondary-container": "#adc3ff",
+              "surface-dim": "#dadada",
+              "secondary-fixed-dim": "#b1c5ff",
+              "on-primary-fixed": "#00174b",
+              "inverse-surface": "#2f3131",
+              "outline-variant": "#c4c6d4",
+              "on-secondary-container": "#394f84",
+              "surface-container-highest": "#e2e2e2",
+              "on-secondary-fixed": "#001946",
+              "on-primary-fixed-variant": "#1c4197",
+              "surface-variant": "#e2e2e2",
+              "surface-container": "#eeeeee",
+              "on-secondary-fixed-variant": "#2e4579",
+              "error-container": "#ffdad6",
+              "on-tertiary": "#ffffff",
+              "primary": "#001d59",
+              "on-tertiary-fixed": "#001a43",
+              "tertiary-fixed-dim": "#afc6ff",
+              "tertiary-container": "#00347a",
+              "surface-tint": "#3959b0",
+              "surface-container-low": "#f3f3f3",
+              "error": "#ba1a1a",
+              "tertiary": "#002050",
+              "on-tertiary-fixed-variant": "#004398",
+              "secondary": "#475d93",
+              "on-tertiary-container": "#719fff",
+              "primary-fixed": "#dbe1ff",
+              "inverse-primary": "#b4c5ff"
+            },
+            fontFamily: {
+              "headline": ["Public Sans"],
+              "body": ["Noto Serif"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .academic-gradient {
+        background: linear-gradient(135deg, #001d59 0%, #003087 100%);
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(20px);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 bg-[#f9f9f9] dark:bg-slate-950 shadow-[0px_40px_40px_rgba(26,28,28,0.06)] dark:shadow-none border-b-0">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-[#001d59] dark:text-white uppercase tracking-tighter font-['Public_Sans']">
+                AUIN Unesp
+            </div>
+<nav class="hidden md:flex items-center space-x-8 font-['Public_Sans'] font-bold tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#003087] dark:hover:text-blue-200 transition-colors duration-300" href="#">Patentes</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#003087] dark:hover:text-blue-200 transition-colors duration-300" href="#">Incubadoras</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#003087] dark:hover:text-blue-200 transition-colors duration-300 font-['Public_Sans']" href="#">Parcerias</a>
+<a class="text-[#001d59] dark:text-blue-300 border-b-2 border-[#001d59] dark:border-blue-400 pb-1 font-['Public_Sans']" href="#">Ecossistema</a>
+</nav>
+<div class="flex items-center space-x-6">
+<span class="material-symbols-outlined text-primary cursor-pointer">search</span>
+<button class="bg-primary-container text-white px-6 py-2 rounded-lg font-label text-sm font-bold tracking-wide hover:opacity-90 transition-all scale-95 duration-200 ease-in-out">
+                    Portal do Inventor
+                </button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[819px] flex items-center overflow-hidden academic-gradient">
+<div class="absolute inset-0 opacity-20" data-alt="Modern research laboratory interior with specialized equipment" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXNnIA5qsKrYWD7BY-KsmtkvI-ResEFuAhVFIOXf99SPc6XyAp2EaBMIeWTP_sPZpAI7gcsMgIXQDMi0ZzYYBWUbdgeAyXpGs3M93OD6Z9pXSJTZpHdkyQ-6USd1O46oAGxvzvXmgNmqhrWY5OGUV6UyiVKkcIO4zGKXXMIRAzysfvGtoQ6XxlK11xy33YFuHg26hR-TbOdRM_oPcRTaAFV0m0u91kCZn1uonpQnov1TV1MJcJAtzU7dw52l8k-PoJg8mJ2JEF17RO'); background-size: cover; background-position: center;"></div>
+<div class="max-w-7xl mx-auto px-8 w-full relative z-10">
+<div class="max-w-3xl">
+<span class="inline-block py-1 px-3 bg-secondary-container text-on-secondary-container font-label text-xs font-bold rounded-full mb-6 uppercase tracking-widest">Inovação e Tecnologia</span>
+<h1 class="text-6xl md:text-8xl font-headline font-black text-white leading-[1.1] mb-8 tracking-tighter">
+                        Inovação que gera valor para a <span class="text-on-primary-container">sociedade</span>
+</h1>
+<p class="text-xl text-white/80 font-body leading-relaxed max-w-xl mb-10 italic">
+                        Transformando o conhecimento acadêmico em soluções reais para o desenvolvimento social e econômico.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-white text-primary px-8 py-4 rounded-xl font-headline font-bold hover:bg-surface-container-low transition-colors">Descubra nosso Impacto</button>
+<button class="border border-white/30 text-white px-8 py-4 rounded-xl font-headline font-bold hover:bg-white/10 transition-colors">Editais Abertos</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: Ecossistema de Inovação -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+<div class="max-w-2xl border-l-4 border-primary pl-8">
+<h2 class="text-4xl font-headline font-bold text-primary mb-4">Ecossistema de Inovação</h2>
+<p class="text-lg text-on-surface-variant font-body leading-relaxed">
+                            Um ambiente integrado que conecta talentos, infraestrutura de ponta e capital para acelerar o desenvolvimento tecnológico.
+                        </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group relative bg-surface-container-low rounded-xl overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern collaborative co-working space for startups" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwnMr8tooT4aGPOGrUnxU1sF_lVidGTOkV1e5OUfOJTsBVmayFILjkl0FLL-RUrDLrL7U-r0whagdhc_GFOdXSUWvhl8E3PNNjEf75z7nrl8uVPoSkxYy1rFIRp05qNukr3nyRuqTRZW6dakzCz5wKjESlYjH108-IFjYmW9yQSn9wcZ5Oj2S7ZNK6zYRbKjH2PyViquKZ2pL9EML-a7AiJzQVBWsXLRPN3nIEIbZia1_2spB7SltMg1X75XLXH36N4RaI-ylRXtF3"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-bold text-primary mb-3">Incubadoras</h3>
+<p class="text-on-surface-variant font-body mb-6">Suporte estratégico para empresas de base tecnológica em estágio inicial.</p>
+<a class="inline-flex items-center text-primary font-label font-bold gap-2 group/link" href="#">
+                                Saiba mais <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative bg-surface-container-low rounded-xl overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="High-tech industrial research facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlsXPbMTMD4094YjIk1mJuYeh2AYFx8fvHZL8_y_mwor_CO45HES-dLr8zbx-CQWWKJ6pjKAMfyQPXmfOVM0qAobkI6dRmLJGxrSsjTd-X07M9JfcrxC4gikpBvkJgCuwo81z1ShNOHSTZFdo_X04Aik7XgT2N0FwqchHZDfxXuw7RoNIogahpi8JyVIcV4a7RTcJt3l7jLrS5Zek21yKcu4EXG76YB_7JJgyhWTgCb98PBmTTkbpbFnuRniKr-nKbAFWKKCM2GQWp"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-bold text-primary mb-3">Parques Tecnológicos</h3>
+<p class="text-on-surface-variant font-body mb-6">Polos de inovação que integram universidades e setor produtivo.</p>
+<a class="inline-flex items-center text-primary font-label font-bold gap-2 group/link" href="#">
+                                Conheça os Polos <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative bg-surface-container-low rounded-xl overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Biotechnology researchers working in a clean lab" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBIDk_yz_VboSnwM4BMb_BA3WSEnDl3VUoeQGJwqm2c-Knd6q9TefN6mzLZeHvL-Bu1fuDStIbqsOlkj1G1qzOKPe7dKtVo_HUTKnTn0wfDt5Ro5JmWAFfD2842BEbhb-TcMKGe8Jc5P8bZniArBKdrwIpiuG2qde0BHpLiqTbvDfBlz9R2FdC5SmznbV7Z06fy02Ame5rc2kBJxu0C_L7P1qoetFvzA7xFoxbcpj0HdFqHYgF5PF4eLvX9BpZjPSKyvcuERYnW2s1"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-bold text-primary mb-3">Centros de Pesquisa</h3>
+<p class="text-on-surface-variant font-body mb-6">Excelência científica voltada para grandes desafios globais.</p>
+<a class="inline-flex items-center text-primary font-label font-bold gap-2 group/link" href="#">
+                                Ver Centros <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Proteção do Conhecimento (Bento Style) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<div class="lg:col-span-5 flex flex-col justify-center">
+<h2 class="text-5xl font-headline font-extrabold text-primary mb-6 leading-tight">Proteção do Conhecimento</h2>
+<p class="text-xl text-on-surface-variant font-body leading-relaxed mb-8">
+                            Nossa expertise em propriedade intelectual garante que as descobertas da Unesp sejam protegidas e devidamente transferidas para o mercado.
+                        </p>
+<div class="space-y-4">
+<div class="flex items-start gap-4 p-4 bg-surface rounded-xl">
+<span class="material-symbols-outlined text-primary bg-primary-fixed p-3 rounded-lg" data-weight="fill">verified_user</span>
+<div>
+<h4 class="font-headline font-bold text-primary">Gestão de Patentes</h4>
+<p class="text-sm font-body text-on-surface-variant">Protocolos e manutenção de depósitos nacionais e internacionais.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-surface rounded-xl">
+<span class="material-symbols-outlined text-primary bg-primary-fixed p-3 rounded-lg" data-weight="fill">handshake</span>
+<div>
+<h4 class="font-headline font-bold text-primary">Licenciamento</h4>
+<p class="text-sm font-body text-on-surface-variant">Transferência ágil de tecnologia para empresas parceiras.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-2 gap-4">
+<div class="col-span-2 bg-primary p-12 rounded-3xl text-white relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="text-3xl font-headline font-bold mb-4">Portfólio de Patentes</h3>
+<p class="text-white/80 font-body mb-8 max-w-md">Acesse nossa vitrine de tecnologias e encontre a solução ideal para o seu negócio.</p>
+<button class="bg-white text-primary px-6 py-3 rounded-lg font-label font-bold flex items-center gap-2 group-hover:bg-blue-50 transition-colors">
+                                    Explorar Tecnologias <span class="material-symbols-outlined">search</span>
+</button>
+</div>
+<span class="material-symbols-outlined absolute -bottom-10 -right-10 text-[200px] text-white/5 rotate-12">lightbulb</span>
+</div>
+<div class="bg-surface-container-highest p-8 rounded-3xl border border-outline-variant/10">
+<div class="text-4xl font-headline font-black text-primary mb-2">1.200+</div>
+<p class="text-sm font-label font-bold uppercase text-on-surface-variant tracking-widest">Patentes Ativas</p>
+</div>
+<div class="bg-surface-container-highest p-8 rounded-3xl border border-outline-variant/10">
+<div class="text-4xl font-headline font-black text-primary mb-2">450+</div>
+<p class="text-sm font-label font-bold uppercase text-on-surface-variant tracking-widest">Tecnologias Licenciadas</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3 & 4: Empreendedorismo & AUIN -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<!-- Empreendedorismo -->
+<div>
+<h2 class="text-3xl font-headline font-bold text-primary mb-8 border-b border-surface-container-high pb-4">Empreendedorismo Unespiano</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-32 h-32 rounded-2xl overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="University students working on a group startup project" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSQ1efIUVIfPcLTVjhnfwnbnUU12O9O5VGwJv_RMvAiaAc86DfFPNz_Tnu4tM7bxBsvuhTMjSjT3To_0hAeLOpyVeOyR4YBDEJ-2YJUg34M7148hx3qI_M3JlSHXRA5IoqnB40so70OHjZPxeep7L9JkGZ0jPBUGn0zka3aIPw5BAFUMoc8pAHYXXpKEd5FYUla1pEIayLWqtg4IKFeMg70I9gn8JoN6uqB8H2y4ovLW_x4ag9887q58zqprAzCtsM1ThZDdYtFAR2"/>
+</div>
+<div>
+<h4 class="text-xl font-headline font-bold text-primary mb-2">Empresas Juniores</h4>
+<p class="text-on-surface-variant font-body">Formando lideranças e aproximando estudantes da realidade do mercado.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-32 h-32 rounded-2xl overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Professional meeting in a modern startup office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfQLMa2fpNNqW8Y_KME_erSw8Lh5jd8DIt_aw6t2C13Y78N02X3hq2yVr6cGRRxeR1arvpnGhgtpS3VJHgJEp-wKKQ231jdQpuBd__dE9U9mH3ObG-39WpKcFzxaeEKtjyqBMewm9cLc74u-rAQM9FiexoSfX0JEffUe8xeR7cGDq7rMUqWAvt4xwJaTetClN2WEFnSs61O5wRYRlUaCPEcWSj_9-gEgBAbBSdaXnCOJ8ebssji3UJNmBegu-0ivf6Btd-e4l-GP3X"/>
+</div>
+<div>
+<h4 class="text-xl font-headline font-bold text-primary mb-2">Startups &amp; Spinoffs</h4>
+<p class="text-on-surface-variant font-body">Negócios inovadores que nasceram das pesquisas em nossos laboratórios.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- AUIN Role -->
+<div class="bg-surface-container-low p-12 rounded-[2rem] relative">
+<span class="material-symbols-outlined text-primary-container text-5xl mb-6">hub</span>
+<h2 class="text-3xl font-headline font-bold text-primary mb-6">O Papel da AUIN</h2>
+<p class="text-lg text-on-surface-variant font-body leading-relaxed mb-6">
+                            A Agência Unesp de Inovação atua como o principal ponto de contato entre o universo acadêmico e o ecossistema externo de negócios.
+                        </p>
+<blockquote class="border-l-4 border-primary pl-6 py-2 italic text-primary font-body mb-8">
+                            "Nossa missão é encurtar distâncias entre a descoberta científica e o benefício direto à população."
+                        </blockquote>
+<a class="bg-primary text-white px-8 py-3 rounded-lg font-label font-bold inline-block hover:opacity-90 transition-opacity" href="#">Nossa Equipe</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Chamadas e Editais -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex items-center justify-between mb-12">
+<h2 class="text-4xl font-headline font-bold text-primary">Chamadas e Editais</h2>
+<a class="text-primary font-label font-bold flex items-center gap-2 hover:underline" href="#">Ver arquivo histórico <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+</div>
+<div class="bg-surface rounded-3xl overflow-hidden">
+<!-- Edital 1 -->
+<div class="p-8 border-b border-surface-container-high flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:bg-surface-container-lowest transition-colors">
+<div class="flex-1">
+<div class="flex gap-2 mb-3">
+<span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-bold rounded-full uppercase">Aberto</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant text-xs font-bold rounded-full uppercase">Empreendedorismo</span>
+</div>
+<h3 class="text-xl font-headline font-bold text-primary mb-1">Edital 005/2024 - Fomento a Startups Biotec</h3>
+<p class="text-on-surface-variant font-body text-sm">Prazo para submissão: Até 15 de Outubro de 2024</p>
+</div>
+<button class="border-2 border-primary text-primary px-6 py-2 rounded-lg font-label font-bold hover:bg-primary hover:text-white transition-all">Ver Edital</button>
+</div>
+<!-- Edital 2 -->
+<div class="p-8 border-b border-surface-container-high flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:bg-surface-container-lowest transition-colors">
+<div class="flex-1">
+<div class="flex gap-2 mb-3">
+<span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-bold rounded-full uppercase">Aberto</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant text-xs font-bold rounded-full uppercase">Internacionalização</span>
+</div>
+<h3 class="text-xl font-headline font-bold text-primary mb-1">Missão Técnica - Ecossistema Berlim 2024</h3>
+<p class="text-on-surface-variant font-body text-sm">Prazo para submissão: Até 30 de Agosto de 2024</p>
+</div>
+<button class="border-2 border-primary text-primary px-6 py-2 rounded-lg font-label font-bold hover:bg-primary hover:text-white transition-all">Ver Edital</button>
+</div>
+<!-- Edital 3 -->
+<div class="p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:bg-surface-container-lowest transition-colors">
+<div class="flex-1">
+<div class="flex gap-2 mb-3">
+<span class="px-3 py-1 bg-error-container text-on-error-container text-xs font-bold rounded-full uppercase">Encerrando em breve</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant text-xs font-bold rounded-full uppercase">Pesquisa Aplicada</span>
+</div>
+<h3 class="text-xl font-headline font-bold text-primary mb-1">Chamada conjunta Unesp/FAPESP - Agro 4.0</h3>
+<p class="text-on-surface-variant font-body text-sm">Prazo para submissão: Até 02 de Agosto de 2024</p>
+</div>
+<button class="border-2 border-primary text-primary px-6 py-2 rounded-lg font-label font-bold hover:bg-primary hover:text-white transition-all">Ver Edital</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f3f3f3] dark:bg-slate-900 py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-['Public_Sans'] font-bold text-[#001d59] dark:text-white mb-6 text-xl">AUIN UNESP</div>
+<p class="font-['Noto_Serif'] text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+                    A Agência Unesp de Inovação promove parcerias entre universidade e empresas para fortalecer a pesquisa científica.
+                </p>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-['Public_Sans'] font-bold text-[#001d59] dark:text-white uppercase text-xs tracking-widest">Institucional</span>
+<nav class="flex flex-col space-y-2">
+<a class="text-slate-500 dark:text-slate-400 hover:underline decoration-[#003087] underline-offset-4 text-sm font-['Noto_Serif']" href="#">Editais</a>
+<a class="text-slate-500 dark:text-slate-400 hover:underline decoration-[#003087] underline-offset-4 text-sm font-['Noto_Serif']" href="#">Transparência</a>
+<a class="text-slate-500 dark:text-slate-400 hover:underline decoration-[#003087] underline-offset-4 text-sm font-['Noto_Serif']" href="#">Equipe</a>
+</nav>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-['Public_Sans'] font-bold text-[#001d59] dark:text-white uppercase text-xs tracking-widest">Legal</span>
+<nav class="flex flex-col space-y-2">
+<a class="text-slate-500 dark:text-slate-400 hover:underline decoration-[#003087] underline-offset-4 text-sm font-['Noto_Serif']" href="#">Contato</a>
+<a class="text-slate-500 dark:text-slate-400 hover:underline decoration-[#003087] underline-offset-4 text-sm font-['Noto_Serif']" href="#">Privacidade</a>
+</nav>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-['Public_Sans'] font-bold text-[#001d59] dark:text-white uppercase text-xs tracking-widest">Siga-nos</span>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined text-[#001d59] cursor-pointer opacity-80 hover:opacity-100 transition-opacity">public</span>
+<span class="material-symbols-outlined text-[#001d59] cursor-pointer opacity-80 hover:opacity-100 transition-opacity">share</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
+<p class="font-['Noto_Serif'] text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+                © 2024 AUIN - Agência Unesp de Inovação. Todos os direitos reservados.
+            </p>
+</div>
+</footer>
+</body></html>

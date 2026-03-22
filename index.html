@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UNESP - Portal Institucional</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#001d59",
+            "primary-container": "#003087",
+            "on-primary": "#ffffff",
+            "on-surface": "#1a1c1c",
+            "on-surface-variant": "#444652",
+            "surface": "#f9f9f9",
+            "surface-container-low": "#f3f3f3",
+            "surface-container": "#eeeeee",
+            "surface-container-lowest": "#ffffff",
+            "outline-variant": "#c4c6d4",
+          },
+          fontFamily: {
+            display: ["Public Sans", "sans-serif"],
+            body: ["Noto Serif", "serif"],
+            label: ["Inter", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .page-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .page-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,29,89,0.08);
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #001d59 0%, #003087 60%, #1c4197 100%);
+    }
+  </style>
+</head>
+<body class="bg-surface min-h-screen">
+
+  <!-- Header -->
+  <header class="hero-gradient text-white">
+    <div class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+      <p class="font-label text-sm tracking-widest uppercase opacity-70 mb-4">Universidade Estadual Paulista</p>
+      <h1 class="font-display text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+        Portal UNESP
+      </h1>
+      <p class="font-body text-lg md:text-xl opacity-90 max-w-2xl leading-relaxed">
+        Páginas institucionais do novo portal da UNESP — design editorial de alta qualidade com identidade acadêmica contemporânea.
+      </p>
+    </div>
+  </header>
+
+  <!-- Navigation Grid -->
+  <main class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="font-display text-2xl font-bold text-primary mb-2">Páginas do Portal</h2>
+    <p class="font-body text-on-surface-variant mb-12">Selecione uma página para visualizar.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Público Externo (Home) -->
+      <a href="publico-externo.html" class="page-card block bg-surface-container-lowest rounded-lg p-8 no-underline">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-3xl">home</span>
+          <span class="font-label text-xs tracking-wider uppercase text-on-surface-variant">Home</span>
+        </div>
+        <h3 class="font-display text-xl font-bold text-on-surface mb-2">Página Inicial</h3>
+        <p class="font-body text-on-surface-variant text-sm leading-relaxed">Portal principal para o público externo da UNESP.</p>
+      </a>
+
+      <!-- Estudar -->
+      <a href="estudar.html" class="page-card block bg-surface-container-lowest rounded-lg p-8 no-underline">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-3xl">school</span>
+          <span class="font-label text-xs tracking-wider uppercase text-on-surface-variant">Graduação & Pós</span>
+        </div>
+        <h3 class="font-display text-xl font-bold text-on-surface mb-2">Estudar na UNESP</h3>
+        <p class="font-body text-on-surface-variant text-sm leading-relaxed">Graduação, pós-graduação, cursos e oportunidades acadêmicas.</p>
+      </a>
+
+      <!-- Pesquisa -->
+      <a href="pesquisa.html" class="page-card block bg-surface-container-lowest rounded-lg p-8 no-underline">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-3xl">science</span>
+          <span class="font-label text-xs tracking-wider uppercase text-on-surface-variant">Ciência</span>
+        </div>
+        <h3 class="font-display text-xl font-bold text-on-surface mb-2">Pesquisa</h3>
+        <p class="font-body text-on-surface-variant text-sm leading-relaxed">Produção científica, grupos de pesquisa e inovação.</p>
+      </a>
+
+      <!-- Inovação -->
+      <a href="inovacao.html" class="page-card block bg-surface-container-lowest rounded-lg p-8 no-underline">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-3xl">lightbulb</span>
+          <span class="font-label text-xs tracking-wider uppercase text-on-surface-variant">AUIN</span>
+        </div>
+        <h3 class="font-display text-xl font-bold text-on-surface mb-2">Inovação</h3>
+        <p class="font-body text-on-surface-variant text-sm leading-relaxed">Agência Unesp de Inovação — transferência de tecnologia e patentes.</p>
+      </a>
+
+      <!-- Parcerias -->
+      <a href="parcerias.html" class="page-card block bg-surface-container-lowest rounded-lg p-8 no-underline">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-3xl">handshake</span>
+          <span class="font-label text-xs tracking-wider uppercase text-on-surface-variant">Institucional</span>
+        </div>
+        <h3 class="font-display text-xl font-bold text-on-surface mb-2">Parcerias</h3>
+        <p class="font-body text-on-surface-variant text-sm leading-relaxed">Convênios, cooperações e parcerias institucionais.</p>
+      </a>
+
+      <!-- Trabalhar na UNESP -->
+      <a href="trabalhar.html" class="page-card block bg-surface-container-lowest rounded-lg p-8 no-underline">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-3xl">work</span>
+          <span class="font-label text-xs tracking-wider uppercase text-on-surface-variant">Carreiras</span>
+        </div>
+        <h3 class="font-display text-xl font-bold text-on-surface mb-2">Trabalhar na UNESP</h3>
+        <p class="font-body text-on-surface-variant text-sm leading-relaxed">Concursos, seleções e oportunidades de trabalho.</p>
+      </a>
+
+      <!-- Informação e Transparência -->
+      <a href="transparencia.html" class="page-card block bg-surface-container-lowest rounded-lg p-8 no-underline">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-3xl">visibility</span>
+          <span class="font-label text-xs tracking-wider uppercase text-on-surface-variant">Transparência</span>
+        </div>
+        <h3 class="font-display text-xl font-bold text-on-surface mb-2">Informação e Transparência</h3>
+        <p class="font-body text-on-surface-variant text-sm leading-relaxed">Dados abertos, prestação de contas e acesso à informação.</p>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-low mt-16">
+    <div class="max-w-6xl mx-auto px-6 py-10">
+      <p class="font-label text-sm text-on-surface-variant text-center">
+        UNESP — Universidade Estadual Paulista "Júlio de Mesquita Filho" · Protótipo do novo portal
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
